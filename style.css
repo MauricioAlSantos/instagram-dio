@@ -24,12 +24,19 @@ body {
     width: 60%;
     height: 100vh;
 }
-
+@keyframes shake {
+    from {zoom:1.01}
+    to{zoom:1}
+}
 .instagram-phone {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
+    animation: shake;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 
 .instagram-phone img {
